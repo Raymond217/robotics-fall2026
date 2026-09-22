@@ -20,16 +20,20 @@ def front_distance(
     Return ``None`` when the sector has no valid reading. Angles are measured in
     radians and the front direction is zero radians.
     """
-    valid_distances = [] 
-    for index, distance in enumerate(ranges):
-        angle = angle_min + index * angle_increment
+    valid_distances = []
+    for index,distance in enumerate(ranges):
+        angle = angle_min+index*angle_increment
         in_front = abs(angle) <= half_width_radians
         is_valid = math.isfinite(distance) and distance > 0
+        
         if in_front and is_valid:
-            valid_distances.append(distance)
+           valid_distances.append(distance)
     if not valid_distances:
        return None
-    return min(valid_distances)
+
+    return (min(valid_distances))   
+
+
 
 def decide_velocity(
     distance: float | None,
@@ -42,3 +46,4 @@ def decide_velocity(
     if distance <= stop_distance:
        return 0.0
     return max(0.0,min(float(forward_speed),0.18))
+
