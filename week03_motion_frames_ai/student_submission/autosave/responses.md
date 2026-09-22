@@ -2,42 +2,76 @@
 
 ## Student
 
-- Course Id: 5485
-- Email: Raymond.Zhang06@login.cuny.edu
-- Name: Raymond Zhang
+- Course Id: test
+- Email: test@test.com
+- Name: Rahj
 
-## concept.arc
+## mission_3.ai_disclosure
 
-when the robot has both linear velocity and angular velocity . It is moving forward while turning at the same time. 
 
-## concept.model_limits
 
-one assumption is the robot will move at the same speed as input velocity. There are slippery roads, mechanical failures, and errors. 
+## mission_3.assigned_pattern
 
-## concept.velocity_pose
+rounded_rectangle
 
-A velocity only tells us how fast the robot moves, but how far the robot will go. We need the duration of how far the robot will move to get the travel distance. 
+## mission_3.assumptions
 
-## mission_1.error_source
 
-The robot might move differently from the equations because of environment and erroneous commands. The robot may actually be near the predicted position but its sensor give wrong direction.
 
-## mission_1.largest_error
+## mission_3.evidence_analysis
 
-There are no record motion results. There are no discrepancy metrics to cite. 
 
-## mission_1.model_vs_observation
 
-The system reports "No motion-sequence evidence found," so there is no evidence for comparison. 
+## mission_3.live_pending
 
-## mission_1.predictions
+False
 
-{'arc': {'theta': 1.6, 'x': 0.375, 'y': 0.365}, 'straight': {'theta': 0.0, 'x': 0.45, 'y': 0.0}, 'turn_then_drive': {'theta': 1.571, 'x': 0.0, 'y': 0.3}}
+## mission_3.modifications
 
-## mission_1.predictions_locked_at
 
-2026-09-17T18:49:54.474877+00:00
 
-## mission_1.twice_distance
+## mission_3.original_output
 
-the distance traveled will nearly doubled. 
+Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.
+
+
+
+## mission_3.original_prompt
+
+Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.
+
+
+
+## mission_3.original_source
+
+Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.
+
+
+
+## mission_3.problems
+
+
+
+## mission_3.saved_specification
+
+Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.
+
+
+
+## mission_3.specification
+
+Describe the intended sequence, speeds, stopping behavior, and measurable success criteria.
+
+
+
+## mission_3.test_plan
+
+
+
+## walkthrough.completed
+
+[0, 1]
+
+## walkthrough.runs
+
+['forward', 'turn', 'arc', 'stop', 'equal', 'left_turn', 'right_turn', 'opposite']
