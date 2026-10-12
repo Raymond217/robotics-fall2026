@@ -1,0 +1,7 @@
+# Final synthesis
+
+Along all three missions, I learned that sensor measurements, estimation methods, and the robot’s surroundings are critical for making safe decisions.
+For mission 1, I analyzed sensor accuracy and reliability. My sensor reading had a mean of 1.9859 m when the actual distance is 2.00 m, giving a bias of -0.0141 m. It showed that the sensor was slightly inaccurate on the average. I also identified missing data points and some outliers, showing why sensor data must be checked before it is used. 
+In mission 2, I was tasked with comparing filtering methods and sensor fusion. Using the exponential filter with Sensor A weighted at 0.75 and Sensor B at 0.25 gave an RMSE of about 0.148 m, a maximum error of 0.768 m, and a response delay of 0.4 seconds. This provided a excellent balance between accuracy and responsiveness because Sensor A updated faster while Sensor B provided steadier readings. 
+In mission 3, I learned that robot decision must match the situation. A warehouse robot must protect workers and equipment while preventing unnecessary delays. An assistive robot must put the safety of people receiving help first. My tests showed zero false-safe decisions in the tested scenarios but more testing is required before deployment. 
+Overall, reliable robots require good measurements, suitable estimation methods, and safety policies designed for the people who may be affected.

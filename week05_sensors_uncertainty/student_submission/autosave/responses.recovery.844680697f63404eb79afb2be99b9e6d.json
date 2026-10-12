@@ -1,0 +1,56 @@
+{
+  "checked_evidence_ids": {},
+  "completed_missions": [],
+  "content_version": 2,
+  "identity_locked": true,
+  "lab_id": "week05_sensors_uncertainty",
+  "legacy_evidence": {},
+  "mission_2_attempts": [],
+  "mission_2_controls": {},
+  "mission_3_attempts": {},
+  "mission_3_controls": {},
+  "mission_3_results": {},
+  "prediction_locks": {
+    "mission_1": {
+      "settings": {
+        "seed": 233460110
+      },
+      "text": "A biased sensor would give readings consistently above or below 2.00 m, the mean will be far from the true value. A noisy sensor would give reading that are scattered above and below 2.00 m, creating a higher standard deviation and variance, but the mean would stay close to 2.00m."
+    }
+  },
+  "responses": {
+    "concepts.observation": "When I boosted noise, the readings became more scattered in the plot. The graph became more wider as the variance and standard deviation increased. When I increased bias, the readings moved away from the true actual value. The spread did not change but the mean and median did. Noise changes the consistency of the readings, while bias changes the accuracy. ",
+    "mission_1.bias": "-0.0141 m",
+    "mission_1.bias_vs_variance": "d",
+    "mission_1.dropouts": "6",
+    "mission_1.mean": "1.9859 m",
+    "mission_1.median": "2.00 m",
+    "mission_1.more_samples": "ddd",
+    "mission_1.outliers": "1",
+    "mission_1.prediction": "A biased sensor would give readings consistently above or below 2.00 m, the mean will be far from the true value. A noisy sensor would give reading that are scattered above and below 2.00 m, creating a higher standard deviation and variance, but the mean would stay close to 2.00m.",
+    "mission_1.prediction_draft": "A biased sensor would give readings consistently above or below 2.00 m, the mean will be far from the true value. A noisy sensor would give reading that are scattered above and below 2.00 m, creating a higher standard deviation and variance, but the mean would stay close to 2.00m.",
+    "mission_1.profile": "quantized",
+    "mission_1.robot_consequence": "d",
+    "mission_1.variance": "0.00431 m\u00b2"
+  },
+  "reviewed_walkthroughs": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "schema_version": 2,
+  "stage": "mission_1",
+  "student": {
+    "course_id": "csci 39536",
+    "email": "Raymond.Zhang06@login.cuny.edu",
+    "name": "Raymond Zhang"
+  },
+  "updated_at": "2026-10-11T16:21:54.121069+00:00",
+  "visited_stages": [
+    "intro",
+    "concepts",
+    "mission_1"
+  ],
+  "walkthrough_index": 3
+}

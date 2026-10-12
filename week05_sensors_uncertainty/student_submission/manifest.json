@@ -1,0 +1,38 @@
+{
+  "files": {
+    "autosave/responses.json": "96dc21b8a40b05647aca374d4d0b770f68fd1bcb7aaec84c166211b27502fee4",
+    "autosave/responses.md": "950ef4a1a17654cbde9d70500a098c74b724cceacee45c829e41b5e49bbab1a4",
+    "autosave/responses.recovery.147dfac99931466599878ab4a5226238.json": "12f448b07dd6757c7527cadc6f44bd7e3647c1e10ada0df0e75427b285982c1e",
+    "autosave/responses.recovery.220ef07bc4b241dfb56487774f218e4f.json": "204e2eba460d0ea79aafcb1a1666d91f1e5ef195183ed347083095f850899f29",
+    "autosave/responses.recovery.844680697f63404eb79afb2be99b9e6d.json": "03ae7cabecd59a98c49d686181d9202a0fd44ea29c01624a1c191a2b4470d6ee",
+    "autosave/responses.recovery.b85bb3d932104b038ce222496b2560ac.json": "b23270c27664fd9f3e0aff235daa879f90ff54d78a6fe6173de807b23cafecb9",
+    "final_reflection.md": "27392977abb232a4b023342d70e600b5c6ef5d8981357ee6dcf8163894027f96",
+    "final_synthesis.md": "ea0da5dda857b3a1e0ce6b3a847a00eb1b2f4fe3bb2a93641b8b3306433d77b4",
+    "mission_1/evidence.png": "bc47f6d7ccad48e0830242da1a6c6b0bc89386a1605eca301f6d514cf6813919",
+    "mission_1/explanation.md": "c22f8c2f9eb38f1fb857232122b52db718556a4a789277913d11d6172f7971f7",
+    "mission_1/measurements.csv": "5b6971d46e1b6685b380d4fac7a8f178bb8fb327b77fc12b46d857c147a77787",
+    "mission_1/submission.json": "07533dd0bed30a8afe7f2ddae18a253d9f8b5b0d245ab02b388ff6a0389cd7d5",
+    "mission_2/evidence.png": "1636fb9083a177668503a2a112c19c15402b0316a23d8465c8ef19f0c609badd",
+    "mission_2/explanation.md": "d5dbb00ce131138b737739f6560901e677f3cfeff087230e3973f0462e3f5d2d",
+    "mission_2/measurements.csv": "7713dbb54fb80b8e33dc5dca700cc4f08c7dce3efd5bd33c9ffa3a36e75ccd3a",
+    "mission_2/submission.json": "a59edceae1369c4c9c6a497769c33aa42793ac89ee2b2e3d5c6452a92597aab9",
+    "mission_3/explanation.md": "f0542ee081c3cb520e99208e856d02f48376276312b4e63b35ee0a3615fa9ed8",
+    "mission_3/measurements.csv": "d2da10e3f061d1a38b84f9b08946f70c3ca095d8e48ed635fbe4fccbb9a93522",
+    "mission_3/submission.json": "87c473979b5f8e2beaae207dc3775789833b712a0baa071f3fb67745381e8036",
+    "student.json": "e3813faade2e5bd7c4a7887ebedf62f13b4532ca50f38286d4e7d70c8229df0b"
+  },
+  "generated_at": "2026-10-12T03:24:17.914363+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "ec73aa9fe567f8c8",
+    "mission_2": "86705ba7479675e5",
+    "mission_3": "99f9c62b21535065"
+  },
+  "response_signature": "d0e7af099668ae56",
+  "schema_version": 2,
+  "student": {
+    "course_id": "csci 39536",
+    "email": "Raymond.Zhang06@login.cuny.edu",
+    "name": "Raymond Zhang"
+  }
+}
