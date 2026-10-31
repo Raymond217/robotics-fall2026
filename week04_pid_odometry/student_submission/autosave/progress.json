@@ -3,7 +3,8 @@
   "stage": "lab",
   "mission_progress": [
     "mission_1",
-    "mission_2"
+    "mission_2",
+    "mission_3"
   ],
   "missions": {
     "mission_1": {
@@ -2748,5 +2749,5 @@
       ]
     ]
   },
-  "saved_at": "2026-10-02T19:26:44"
+  "saved_at": "2026-10-11T23:51:12"
 }

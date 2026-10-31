@@ -8,11 +8,11 @@
 
 ### background_compare
 
-the engineer choose the different values for kp, ki, and kd gains. It helps control how strongly the system responds to error, accumulated error, and the rate of change of error. They tune in so the system reaches the target quickly, accurately, and safely. PID is a feedback controller because it uses the system's output and error to decide what orders to follow rather than follow continuously.
+
 
 ### background_social
 
-A car braking system provides a good example. If the controller behaves too aggressively, the brakes may react too much. It might create accidents like braking, jerking, or just an uncomfortable stop. If it takes too long to stop, it will skip stopping point and put people in danger. Engineers have to consider speed, stability, and safety when tuning in.
+
 
 ### odom_background_wheels
 
@@ -39,6 +39,18 @@ The green and orange paths showed some difference between the robot’s true pat
 ### m3_human
 
 The most consequential failure for a pedestrian would be the robot getting too close to or colliding with a person because of tracking error. I would choose a slower speed and maintain a larger clearance margin, even if that makes the route take longer. Before deployment, the robot's safety settings, route, calibration, and test results should be checked by the responsible engineering or safety team to make sure the system meets the required clearance and tracking limits.
+
+### final_reflection
+
+
+
+### pid_playground_terms
+
+
+
+### m1_prediction
+
+
 
 ## Mission explanations
 
