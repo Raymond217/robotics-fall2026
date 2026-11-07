@@ -1,0 +1,16 @@
+{
+  "status": "implementation_error",
+  "error": "NotImplementedError: Implement A* with Manhattan distance",
+  "planning_s": 6.987000233493745e-06,
+  "expanded": 0,
+  "peak_frontier": 0,
+  "path": [],
+  "path_length_m": 0.0,
+  "optimal_length_m": 0.0,
+  "optimality_ratio": null,
+  "case": "Start equals goal",
+  "planner": "astar",
+  "source_sha256": "0ce2f3340a9d6fa708f56d8898f077afc529dfebb1f4b9f18386b9d3ff122a9d",
+  "expected_status": "succeeded",
+  "check_passed": false
+}

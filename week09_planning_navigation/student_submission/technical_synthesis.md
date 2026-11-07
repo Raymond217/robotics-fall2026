@@ -1,0 +1,1 @@
+A suitable route for a robot sharing space with people must balance search efficiency, navigation accuracy, route quality, and personal safety. A route should not simply be the shortest path; it should also be reliable, avoid obstacles, maintain distance from people, and allow the robot to reach its destination without any unnecessary delays. 

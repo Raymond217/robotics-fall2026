@@ -1,0 +1,18 @@
+{
+  "schema": 2,
+  "status": "draft",
+  "student": {
+    "name": "Raymond Zhang",
+    "email": "Raymond.Zhang06@login.cuny.edu"
+  },
+  "completed_missions": [],
+  "files": {
+    ".gitkeep": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "autosave/responses.json": "3d0c39cb7ecdedd49baeaa5af31050796f518c1074a396a8573a9113fb5b7711",
+    "final_reflection.md": "84fc2be0085b6a5a9c243cc2883d8b2eb12dd6141e88029e27592f2d65f3c168",
+    "mission_1/latest_small_check.json": "7efaf4a85eaeebdaf4d0ae8ea1a78cd3feb990a34e906313309640372e389dcf",
+    "mission_1/offline_results.json": "5ebe16a13af7edfe2ad2ff0b0dc2cfd86f277921088186b64be1d9b9d42103de",
+    "mission_1/planners.py": "0ce2f3340a9d6fa708f56d8898f077afc529dfebb1f4b9f18386b9d3ff122a9d",
+    "technical_synthesis.md": "dda4a8ae1029770c73f0201cc2de777517405caf1c19d55ee40eae2ae57a178f"
+  }
+}
