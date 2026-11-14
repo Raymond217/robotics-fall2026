@@ -1,0 +1,7 @@
+The activity changed how I viewed robotics, artificial intelligence, and computer informatics. I wanted to participate in computing, I enjoyed seeing how AL models read code and use it to navigate the environment. It was interesting to see how changing a prompt could affect the robot’s behavior and how even the best instructions fail to make the correct result work. 
+
+One thing that stood out to me was that AI does not always understand different situations reliably. For example, the image recognition model misidentified a drawing compass as a tape measure, and the robot struggled to find its way around the wall even when directions were clear. These experiences helped me understand why testing and micromanaging results are important parts of engineering. 
+
+I also learned that technology should be developed with human needs and safety in mind. AI systems should communicate their problems rather than making assumptions and wrong decisions. I believe connecting computing with ethical and societal considerations is very important because these technologies will affect people’s everyday lives. 
+
+Overall, this activity made me want to completely learn about AI and robotics. I would like to work on similar projects in the future, especially projects that combine software, intelligent systems, and real-word scenarios. 

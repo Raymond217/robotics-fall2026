@@ -1,0 +1,303 @@
+{
+  "box_conditions": [
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "normal"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 0,
+      "box_precision": null,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "dim"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "glare"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 1,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "far"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "occluded"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "rotated"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "cluttered"
+    },
+    {
+      "box_fn": 0,
+      "box_fp": 2,
+      "box_precision": 0.0,
+      "box_recall": null,
+      "box_tp": 0,
+      "condition": "distractor"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "blur"
+    },
+    {
+      "box_fn": 2,
+      "box_fp": 3,
+      "box_precision": 0.0,
+      "box_recall": 0.0,
+      "box_tp": 0,
+      "condition": "background"
+    },
+    {
+      "box_fn": 0,
+      "box_fp": 0,
+      "box_precision": 1.0,
+      "box_recall": 1.0,
+      "box_tp": 2,
+      "condition": "independent"
+    }
+  ],
+  "conditions": [
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "normal",
+      "conditions": [
+        "normal"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 9.73276500129335,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.3333333333333333,
+      "condition": "dim",
+      "conditions": [
+        "dim"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 2,
+      "fp": 0,
+      "mean_latency_ms": 6.921065666877742,
+      "precision": null,
+      "recall": 0.0,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 0
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "glare",
+      "conditions": [
+        "glare"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 9.568726999229208,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "far",
+      "conditions": [
+        "far"
+      ],
+      "false_positive_rate": 0.0,
+      "fn": 1,
+      "fp": 0,
+      "mean_latency_ms": 7.777027999206136,
+      "precision": 1.0,
+      "recall": 0.5,
+      "sample_count": 3,
+      "tn": 1,
+      "tp": 1
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "occluded",
+      "conditions": [
+        "occluded"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 8.753442999780722,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "rotated",
+      "conditions": [
+        "rotated"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 7.580224332438472,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "cluttered",
+      "conditions": [
+        "cluttered"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 8.56172633333093,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.0,
+      "condition": "distractor",
+      "conditions": [
+        "distractor"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 2,
+      "mean_latency_ms": 7.150925999667379,
+      "precision": 0.0,
+      "recall": null,
+      "sample_count": 2,
+      "tn": 0,
+      "tp": 0
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "blur",
+      "conditions": [
+        "blur"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 7.995822334729989,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "condition": "background",
+      "conditions": [
+        "background"
+      ],
+      "false_positive_rate": 1.0,
+      "fn": 0,
+      "fp": 1,
+      "mean_latency_ms": 8.045518667737875,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "sample_count": 3,
+      "tn": 0,
+      "tp": 2
+    },
+    {
+      "accuracy": 1.0,
+      "condition": "independent",
+      "conditions": [
+        "independent"
+      ],
+      "false_positive_rate": null,
+      "fn": 0,
+      "fp": 0,
+      "mean_latency_ms": 7.150172999899951,
+      "precision": 1.0,
+      "recall": 1.0,
+      "sample_count": 2,
+      "tn": 0,
+      "tp": 2
+    }
+  ],
+  "localization": {
+    "box_fn": 18,
+    "box_fp": 24,
+    "box_precision": 0.07692307692307693,
+    "box_recall": 0.1,
+    "box_tp": 2
+  },
+  "metrics": {
+    "accuracy": 0.6129032258064516,
+    "conditions": [
+      "background",
+      "blur",
+      "cluttered",
+      "dim",
+      "distractor",
+      "far",
+      "glare",
+      "independent",
+      "normal",
+      "occluded",
+      "rotated"
+    ],
+    "false_positive_rate": 0.8181818181818182,
+    "fn": 3,
+    "fp": 9,
+    "mean_latency_ms": 8.174553516226062,
+    "precision": 0.6538461538461539,
+    "recall": 0.85,
+    "sample_count": 31,
+    "tn": 2,
+    "tp": 17
+  },
+  "sweep": []
+}

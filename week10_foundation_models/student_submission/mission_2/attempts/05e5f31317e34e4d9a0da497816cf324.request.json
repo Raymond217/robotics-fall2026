@@ -1,0 +1,14 @@
+{
+  "job_id": "05e5f31317e34e4d9a0da497816cf324",
+  "kind": "vision",
+  "case": "custom",
+  "prompt": "The robot needs to mark a circle on a flat wooden workpiece. Examine the photograph and identify which visible tool could help complete this task. Explain what visual evidence supports your choice. Separate what you can actually see from what you are assuming. Do not assume the robot can pick up or use the tool without checking whether it is physically accessible and graspable. If you are uncertain, explain why.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-12T05:21:50.605761+00:00",
+  "comparison_ids": [
+    "5a024616165b4376ba69b2f54dc5061e",
+    "c6b9b19b874b4ba1b1e11ae553a3c49f",
+    "9cad54e677ac45778a5ab65c1790291b"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "job_id": "b8f7e6c476f04f25b24be0238a027998",
+  "kind": "language",
+  "case": "custom",
+  "prompt": "Reach the blue target crate at coordinates (11,1), starting from (1,7). Follow these four checkpoints in order:\n\n1. Move UP until you reach row 1.\n2. Move RIGHT until you reach column 7.\n3. Move DOWN until you reach row 7.\n4. Move RIGHT until you reach column 11.\n5. Move UP until you reach row 1.\n\nAlways check your current coordinates and neighboring cells before choosing an action. Follow the checkpoints in order, and do not skip any checkpoint.\n\nIMPORTANT RULES:\n- Never move into a wall.\n- If an action is blocked, choose another free direction that helps you reach the current checkpoint.\n- Do not repeatedly choose an action that was previously blocked.\n- Do not choose STOP unless you have reached the goal.\n- Remember that UP decreases the row, DOWN increases the row, LEFT decreases the column, and RIGHT increases the column.\n- Use the current coordinates to determine when each checkpoint has been reached.\n- Once you reach (11,1), choose STOP.\n\nYour priority is to reach the goal safely and efficiently without wasting steps.",
+  "phase": "custom",
+  "parent_id": null,
+  "requested_at": "2026-11-13T23:54:23.453437+00:00",
+  "comparison_ids": [
+    "c8a5c665379946a6a29c13fe48dc5582",
+    "49bd6937f16b4d8fba1d2e96ce948ecd",
+    "04c119da1a6a4c6ea29b96613197ab2e"
+  ],
+  "task": "robot",
+  "robot_state": {
+    "position": [
+      1,
+      7
+    ],
+    "step": 0,
+    "history": [],
+    "finished": false,
+    "goal_reached": false,
+    "first_goal_step": null,
+    "last_feedback": "No previous action.",
+    "last_decision": null
+  },
+  "simulator_contract": "8da30a943bd97ee39237aa05e8e6800fecdecbef3ce692d7d4e48f851679060f"
+}

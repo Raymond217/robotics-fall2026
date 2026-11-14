@@ -1,0 +1,42 @@
+{
+  "artifact_hashes": {
+    "analysis.json": "23752dd55be9bdd063bac8f85d303967e6ccc08dc06b1a784ebfde6c064612b5",
+    "evidence.json": "b5b2c3dd9ef59e7f7b4d4f32601189a616dcbaadb98a3ebaf361f969c23e72be",
+    "explanation.md": "00c12ad68419b2907bdf5487561d6474877320cb85fd35aa7f8fc4f4925fe95a",
+    "map.pgm": "ed918218fe57e6cc82f0b7edb87f71ab30bf0b5cd0c1d2c156a110d1c82c1fb1",
+    "map.yaml": "81894c35935bc7a38dd320b18d3342d6853dab3f1ba64402325ee7048740253e",
+    "rviz_screenshot.png": "d5ad5b756e0897466d948b7833bc16a3840a9af0af872f80aa8ef9d2627c94f8"
+  },
+  "evidence": {
+    "analysis": {
+      "captured_at": "2026-10-30T23:17:55.033175+00:00",
+      "duration_minutes": 8.0,
+      "map_image": "map.pgm",
+      "map_yaml": "map.yaml",
+      "metrics": {
+        "border_contact_fraction": 0.1484771573604061,
+        "free_fraction": 0.2868070923148376,
+        "height": 147,
+        "known_fraction": 0.3056033658443297,
+        "largest_component_cells": 141,
+        "map_area_m2": 91.50750000000001,
+        "occupied_components": 58,
+        "occupied_fraction": 0.01879627352949212,
+        "resolution": 0.05,
+        "speckle_fraction": 0.06831395348837209,
+        "unknown_fraction": 0.6943966341556703,
+        "width": 249
+      },
+      "quality_score": 52.1,
+      "schema_version": 1,
+      "strategy": "center_then_corridors",
+      "world_id": "turtlebot3_house"
+    },
+    "state_signature": "cc8d0072ace0e913"
+  },
+  "lab_id": "week06_slam_localization",
+  "mission_id": "mission_1",
+  "saved_at": "2026-10-30T23:24:28.132410+00:00",
+  "schema_version": 2,
+  "state_signature": "cc8d0072ace0e913"
+}

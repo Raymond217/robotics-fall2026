@@ -1,0 +1,4 @@
+{
+  "status": "cancelled",
+  "error": "This earlier attempt stopped. Older lab versions also stopped long runs automatically. Start a new run with the updated lab."
+}

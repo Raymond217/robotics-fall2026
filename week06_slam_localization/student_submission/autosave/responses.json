@@ -1,0 +1,159 @@
+{
+  "checked_evidence_ids": {
+    "mission_1": "cc8d0072ace0e913",
+    "mission_2": "dd48be34c02f2008"
+  },
+  "completed_missions": [
+    "mission_1",
+    "mission_2"
+  ],
+  "content_version": 5,
+  "evidence": {
+    "mission_1": {
+      "captured_at": "2026-10-30T23:17:55.033175+00:00",
+      "duration_minutes": 8.0,
+      "map_image": "map.pgm",
+      "map_yaml": "map.yaml",
+      "metrics": {
+        "border_contact_fraction": 0.1484771573604061,
+        "free_fraction": 0.2868070923148376,
+        "height": 147,
+        "known_fraction": 0.3056033658443297,
+        "largest_component_cells": 141,
+        "map_area_m2": 91.50750000000001,
+        "occupied_components": 58,
+        "occupied_fraction": 0.01879627352949212,
+        "resolution": 0.05,
+        "speckle_fraction": 0.06831395348837209,
+        "unknown_fraction": 0.6943966341556703,
+        "width": 249
+      },
+      "quality_score": 52.1,
+      "schema_version": 1,
+      "strategy": "center_then_corridors",
+      "world_id": "turtlebot3_house"
+    },
+    "mission_2": {
+      "captured_at": "2026-10-31T01:13:02.432670+00:00",
+      "duration_minutes": 9.0,
+      "map_image": "map.pgm",
+      "map_yaml": "map.yaml",
+      "metrics": {
+        "border_contact_fraction": 0.0,
+        "free_fraction": 0.079010090255765,
+        "height": 442,
+        "known_fraction": 0.09067316766278705,
+        "largest_component_cells": 115,
+        "map_area_m2": 413.27,
+        "occupied_components": 575,
+        "occupied_fraction": 0.011663077407022044,
+        "resolution": 0.05,
+        "speckle_fraction": 0.3454356846473029,
+        "unknown_fraction": 0.909326832337213,
+        "width": 374
+      },
+      "quality_score": 24.1,
+      "schema_version": 1,
+      "strategy": "corridor_by_corridor",
+      "world_id": "turtlebot3_house"
+    },
+    "preflight": {
+      "captured_at": "2026-10-30T19:41:18.047257+00:00",
+      "checks": [
+        {
+          "check": "ROS distribution",
+          "detail": "jazzy",
+          "passed": true
+        },
+        {
+          "check": "ros2 command",
+          "detail": "/opt/ros/jazzy/bin/ros2",
+          "passed": true
+        },
+        {
+          "check": "ROS_DOMAIN_ID",
+          "detail": "26 (expected 26 for course launcher)",
+          "passed": true
+        },
+        {
+          "check": "RViz command",
+          "detail": "/opt/ros/jazzy/bin/rviz2",
+          "passed": true
+        },
+        {
+          "check": "Package: turtlebot3_gazebo",
+          "detail": "turtlebot3_gazebo",
+          "passed": true
+        },
+        {
+          "check": "Package: turtlebot3_teleop",
+          "detail": "turtlebot3_teleop",
+          "passed": true
+        },
+        {
+          "check": "Package: slam_toolbox",
+          "detail": "slam_toolbox",
+          "passed": true
+        },
+        {
+          "check": "Package: nav2_map_server",
+          "detail": "nav2_map_server",
+          "passed": true
+        },
+        {
+          "check": "Package: course_slam_tools",
+          "detail": "course_slam_tools",
+          "passed": true
+        }
+      ],
+      "ready": true,
+      "run_id": "6e37a8080d804b42bb14b7fcd2b95231",
+      "schema_version": 2
+    }
+  },
+  "lab_id": "week06_slam_localization",
+  "prediction_locks": {
+    "mission_1.route": {
+      "context_signature": "09ef949f5d712b72",
+      "text": "My plan is to start near the center left of the house and move into the opening door in the center. I will move up to enter the house. I will then explore the left and right sides of the house. I drive the turtleBot3 through the accessible corridors and rooms,I will use Gazebo to avoid walls and furniture while watching RViz to build the map using LiDAR scans. I will move around corners and obstacles to reveal unknown areas. Finally, I will return to a recognizable junction to check the accuracy of the map."
+    },
+    "mission_2.strategy": {
+      "context_signature": "01a7d56d2888e67d",
+      "text": "For the second route, I plan to start at the robot's original starting position near the center-left of the house. Unlike the first route, I will explore the central corridors and accessible rooms first, then move toward the left and right sides of the house. I will use Gazebo to avoid walls and furniture while monitoring RViz to observe how LiDAR scans create the occupancy-grid map. I will move slowly around corners and obstacles to help the robot avoid walls and detect previously unexplored areas. Finally, I will return to a recognizable wall or junction to check whether the new LiDAR scans align with the mapped walls. I will record the time taken and compare the completeness and quality of this map with my Mission 1 map."
+    }
+  },
+  "responses": {
+    "final.course_reflection": "This lab helped me understand how robotics combines programming, sensors, and engineering to get around certain situations in the real world. I found it interesting to watch the turtlebot3 create a map of the world using the surroundings using LiDAR and slam. Before the activity, I though that robots can navigate environment of its own, but this lab taught me how robots measure their positions and avoid certain obstacles. \n\nOne of the most interesting parts is comparing the two road maps. I learned that the route a robot follows can affect how efficiently it maps the environment. I also realized that even when a map looks complete, some areas are not looked because sensors cannot detect everything. \n\nThis experience increased by interest in robotics and artificial intelligence because it showed me how software and physical systems act to work together. I can see how slam technology could be useful in autonomous vehicles, warehouse robots, and robots that assist people in everyday environments. \n\nSafety and reliability comes first when designing robots. A robot must recognize obstacles, record probabilities, and avoid making mistakes in measuring the environment. Overall this activity helped me appreciate the challenges of autonomous navigation and motivate me to continue learning. ",
+    "final.synthesis": "In the lab, I learned how slam allow a robot to create a map of unknown environment while calculating its position. The TurtleBot3 robot used odometry and LiDAR measurements to explore a simulated house created by gazebo. Odometry provided an estimate of the robot's position and operation while LiDAR measured distances to nearby walls and obstacles. SLAM toolbox combined this information to create an occupancy-grid map, which I observed using RViz. \n\nDuring mission 1, I follow a route that helps explore areas of the house before moving into the interior. I used the keyboard teleoperation to navigate through accessible corridors and rooms while avoiding walls and furniture. Some areas remained unknown because the robot cannot scan behind certain corridors and corners. \n\nDuring mission 2, I used a different strategy by exploring the central corridors and rooms first before moving outside. This allowed me to compared how different exploration routes affect map coverage and efficiency. I examined the wall outlines, unexplored regions, and record the mapping to check both strategies. \n\nOverall, this lab demonstrated that successful mapping depends on accurate sensor measurement, motion estimates and careful navigation. I learned that a map can appear complete while still containing errors or unknown areas. SLAM helps robots navigate environments and evaluate map quality.",
+    "mission_1.drift_and_revisit": "When I returned to a previously explored area, I could compare the new LiDAR scans with the existing walls in RViz. However, I could not clearly determine whether the old walls shifted or doubled. I would need clearer screenshots from before and after revisiting the area to confirm whether SLAM corrected any drift. Therefore, I cannot confidently claim that loop closure occurred.",
+    "mission_1.limitations": "An area that remained poorly mapped was near the corners and behind some obstacles in the house. These areas appeared gray or had incomplete wall outlines in RViz. This happened because my robot did not travel close enough to scan every corner, and the LiDAR could not detect objects hidden behind walls or furniture. As a result, some areas remained unknown.",
+    "mission_1.route.original_prediction": "My plan is to start near the center left of the house and move into the opening door in the center. I will move up to enter the house. I will then explore the left and right sides of the house. I drive the turtleBot3 through the accessible corridors and rooms,I will use Gazebo to avoid walls and furniture while watching RViz to build the map using LiDAR scans. I will move around corners and obstacles to reveal unknown areas. Finally, I will return to a recognizable junction to check the accuracy of the map.",
+    "mission_1.route.prediction_draft": "My plan is to start near the center left of the house and move into the opening door in the center. I will move up to enter the house. I will then explore the left and right sides of the house. I drive the turtleBot3 through the accessible corridors and rooms,I will use Gazebo to avoid walls and furniture while watching RViz to build the map using LiDAR scans. I will move around corners and obstacles to reveal unknown areas. Finally, I will return to a recognizable junction to check the accuracy of the map. ",
+    "mission_2.comparison": "In mission 1, I explored the environment by following the outer walls first before moving into the interior. In mission 2, I explored the central corridors and accessible rooms first before moving to the left and right sides. The two strategies allow me to explore the environment in different ways. I compared the maps by examining the perimeter of the walls, the amount of unexplored space, and the alignment of LiDAR scans with previously mapped structures. I also compared the time required to scan each map. These observation helped me determine which route provided a useful map more efficiently. ",
+    "mission_2.map_choice": "I would choose the map from mission 1 because it provides a more useful representation of available environment. The map shows a simple house with easy to explore corridors and unknown areas. Compared with the other map, it was easier to explore. The mapping time was 8 minutes compared to 10 minutes for the other map. Based on the map quality and the time required, I consider this strategy the better choice for this environment. ",
+    "mission_2.strategy.original_prediction": "For the second route, I plan to start at the robot's original starting position near the center-left of the house. Unlike the first route, I will explore the central corridors and accessible rooms first, then move toward the left and right sides of the house. I will use Gazebo to avoid walls and furniture while monitoring RViz to observe how LiDAR scans create the occupancy-grid map. I will move slowly around corners and obstacles to help the robot avoid walls and detect previously unexplored areas. Finally, I will return to a recognizable wall or junction to check whether the new LiDAR scans align with the mapped walls. I will record the time taken and compare the completeness and quality of this map with my Mission 1 map.",
+    "mission_2.strategy.prediction_draft": "For the second route, I plan to start at the robot's original starting position near the center-left of the house. Unlike the first route, I will explore the central corridors and accessible rooms first, then move toward the left and right sides of the house. I will use Gazebo to avoid walls and furniture while monitoring RViz to observe how LiDAR scans create the occupancy-grid map. I will move slowly around corners and obstacles to help the robot avoid walls and detect previously unexplored areas. Finally, I will return to a recognizable wall or junction to check whether the new LiDAR scans align with the mapped walls. I will record the time taken and compare the completeness and quality of this map with my Mission 1 map. \n"
+  },
+  "schema_version": 2,
+  "stage": "mission_1",
+  "student": {
+    "email": "Raymond.Zhang06@login.cuny.edu",
+    "name": "Raymond Zhang"
+  },
+  "tutorial_complete": {
+    "tutorial_1": true,
+    "tutorial_2": true,
+    "tutorial_3": true
+  },
+  "updated_at": "2026-10-31T01:55:52.119219+00:00",
+  "visited_stages": [
+    "intro",
+    "tutorial_1",
+    "tutorial_2",
+    "preflight",
+    "tutorial_3",
+    "mission_1",
+    "mission_2",
+    "final"
+  ]
+}

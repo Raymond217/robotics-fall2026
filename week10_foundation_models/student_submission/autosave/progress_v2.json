@@ -1,0 +1,86 @@
+{
+  "stage": "final_submission",
+  "responses": {
+    "m1_analysis": "The request given produced a reasonable answer because it understood that the robot needed to navigate to the shelf, inspect the cup, and report its observations. However, it incorrectly thought that the cup was empty without having any clear evidence. The request was not very clear because it did not identify the location or object, and the model made assumptions instead of asking for clarification. My improved request was more specific because it identified the object, explained what the robot should observe, and instructed the model not make any unnecessary assumptions. ",
+    "m2_analysis": "In my new improved request, I gave the robot a specific goal: marking a circle on a flat wooden workpiece. However, the model incorrectly identified the visible drawing compass as a circle cutter. The model before failed to explain the actual visual evidence supporting its answer or address whether the tool was accessible and graspable. Vision models can still make mistakes even when a clear task is provided. ",
+    "m3_analysis": "My prompt provided better instructions than the given supplied goal only prompt. The goal only prompt had a big problem and never moved beyond [1,7]. My prompt included specific checkpoints, coordinate instructions, and rules to avoid repeated blocked movements. The instructions help the robot move the correct path around the walls. The robot relies on a language model to understand the instructions correctly. Even a detailed prompt does not guarantee that the robot will choose the correct actions. ",
+    "final_synthesis": "When doing the three missions, I learned that the programming models can be useful, but their answers and decisions are not always reliable. In mission 1 the robot cannot physically pick up or carry objects because it did not have an arm or gripper. In mission 2, the model incorrectly identified a compass as tape measure. It showed that AI can misunderstand visual information. In mission 3, the robot struggled to navigate around walls. The goal only prompt resulted in a few blocked move and never managed to reach the goal. ",
+    "final.course_reflection": "The activity changed how I viewed robotics, artificial intelligence, and computer informatics. I wanted to participate in computing, I enjoyed seeing how AL models read code and use it to navigate the environment. It was interesting to see how changing a prompt could affect the robot\u2019s behavior and how even the best instructions fail to make the correct result work. \n\nOne thing that stood out to me was that AI does not always understand different situations reliably. For example, the image recognition model misidentified a drawing compass as a tape measure, and the robot struggled to find its way around the wall even when directions were clear. These experiences helped me understand why testing and micromanaging results are important parts of engineering. \n\nI also learned that technology should be developed with human needs and safety in mind. AI systems should communicate their problems rather than making assumptions and wrong decisions. I believe connecting computing with ethical and societal considerations is very important because these technologies will affect people\u2019s everyday lives. \n\nOverall, this activity made me want to completely learn about AI and robotics. I would like to work on similar projects in the future, especially projects that combine software, intelligent systems, and real-word scenarios. "
+  },
+  "student": {
+    "name": "Raymond ",
+    "email": "Raymond.Zhang06@login.cuny.edu"
+  },
+  "tutorial_step": 5,
+  "tutorial_reviewed": 6,
+  "controls": {
+    "control_ground_instruction": "Point to the cup",
+    "control_demo_step": 0,
+    "control_adapt_instruction": "Move the blue cup to the tray",
+    "control_adapt_choice": "Zero-shot prompting",
+    "control_adapt_scenario": "Grasps fail from a new camera angle",
+    "control_adapt_records": 2,
+    "control_chunk_size": 2,
+    "control_movement_token": 191,
+    "control_movement_angle": 0,
+    "control_chunk_hz": 10,
+    "control_validate_age_navigate": 27.1,
+    "control_validate_case": "Navigate to the shelf",
+    "control_validate_conf_navigate": 0.5,
+    "control_validate_conf_inspect": 0.9,
+    "control_validate_age_inspect": 20.1,
+    "control_live_language_runs": [
+      "0d33c194ab5346c2bf882285d4356a5c",
+      "abfb8cbf0ac44ef0972882b86c5232d4",
+      "c65705ab9a844e8f8db8f8935e054d20",
+      "d92219ba424b47cfb3606ff1ee47b9ef"
+    ],
+    "control_live_language_active": "d92219ba424b47cfb3606ff1ee47b9ef",
+    "control_live_language_custom_prompt": "Go to the shelf, inspect the cup using your camera, and report its visible condition. Do not assume anything that you cannot observe. If you cannot determine something about the cup, clearly explain what information is missing. Do not attempt to pick up or move the cup.",
+    "control_live_vision_runs": [
+      "5a024616165b4376ba69b2f54dc5061e",
+      "c6b9b19b874b4ba1b1e11ae553a3c49f",
+      "9cad54e677ac45778a5ab65c1790291b",
+      "05e5f31317e34e4d9a0da497816cf324"
+    ],
+    "control_live_vision_active": "05e5f31317e34e4d9a0da497816cf324",
+    "control_live_vision_custom_prompt": "The robot needs to mark a circle on a flat wooden workpiece. Examine the photograph and identify which visible tool could help complete this task. Explain what visual evidence supports your choice. Separate what you can actually see from what you are assuming. Do not assume the robot can pick up or use the tool without checking whether it is physically accessible and graspable. If you are uncertain, explain why.",
+    "control_robot_active": "7fe49ae79f9c4879a814c8edbbc96cf2",
+    "control_robot_runs": [
+      "db6fb482304a428686d1ef7bec5ab84a",
+      "58294bb9c71b44129cd95166db2485be",
+      "422f680cbbfc491ea1f20c9e21ee8676",
+      "b1bf6b4a40244383aa48fff12f3fe846",
+      "3842432e298f462188d1975abf8fc3b9",
+      "68ffedcfa5ca43a8af53938bd8969fb3",
+      "daedfaf394934572a745d1f487ee4037",
+      "2b0eb634caac44b0aee640eb1cedad0a",
+      "368d4933bf1a4f3c94f5c6d0f65dfbde",
+      "edf21a56bff240f7bf39da6eeab34ea5",
+      "50a9c4a12d554f7a8fb9a3add244bfca",
+      "c869afab4f324af399d228380352ce29",
+      "c8a5c665379946a6a29c13fe48dc5582",
+      "49bd6937f16b4d8fba1d2e96ce948ecd",
+      "04c119da1a6a4c6ea29b96613197ab2e",
+      "b8f7e6c476f04f25b24be0238a027998",
+      "7fe49ae79f9c4879a814c8edbbc96cf2"
+    ],
+    "control_robot_custom_prompt": "Request: Reach the blue target crate at (11,1), starting from (1,7). Reply with exactly the word UP until row 1. Then reply RIGHT until column 3. Continue RIGHT toward column 7, DOWN toward row 7, RIGHT until column 11, and UP until row 1. Always check your current coordinates and neighboring cells before moving. Never attempt to move into a wall. If a move is blocked, choose a different available direction that helps you reach the next checkpoint. Do not repeat blocked moves or choose STOP unless you have reached the goal. Stop only at (11,1)."
+  },
+  "guided_version": 4,
+  "guided_seen": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "response_widgets": [
+    "m1_analysis",
+    "m2_analysis",
+    "m3_analysis",
+    "final_synthesis"
+  ],
+  "version": 2
+}

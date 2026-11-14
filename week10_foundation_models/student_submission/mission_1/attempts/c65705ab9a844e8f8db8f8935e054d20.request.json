@@ -1,0 +1,10 @@
+{
+  "job_id": "c65705ab9a844e8f8db8f8935e054d20",
+  "kind": "language",
+  "case": "capability",
+  "prompt": "Pick up the cup and carry it to the desk.",
+  "phase": "baseline",
+  "parent_id": null,
+  "requested_at": "2026-11-12T05:04:24.008379+00:00",
+  "comparison_ids": []
+}
